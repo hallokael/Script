@@ -12,10 +12,10 @@ class Application(Frame):
     def createWidgets(self):
         self.nameInput = Entry(self)
         self.nameInput.pack()
-        self.alertButton = Button(self, text='Hello', command=self.goStart)
+        self.alertButton = Button(self, text='Hello', command=self.move2)
         self.alertButton.pack()
 
-    def hello(self):
+    def move2(self):
         sleep(1)
         mouse2(600,600)
     def goStart(self):
